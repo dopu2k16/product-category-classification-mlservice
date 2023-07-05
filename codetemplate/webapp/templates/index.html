@@ -1,0 +1,21 @@
+{% block head%}
+
+{% endblock %}
+
+{% block body %}
+<div>
+    <h1>GFK MLE Coding Challenge: Product Category Classification</h1>
+
+    <form action="/predict" method="POST">
+        <div>
+            <p>Text</p>
+            <input type="text" name = "text" id="text">
+        </div>
+
+
+        <input type="submit" value="Predict">
+    </form>
+    <h2>Prediction: Product Category: {{pred}}</h2>
+    <h3>Prediction Probability: {{pred_prob}}</h3>
+</div>
+{% endblock %}
